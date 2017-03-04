@@ -23,7 +23,7 @@ Installation
 1. Download and install docker on local linux host, to install docker on ubuntu14.04 execute these following commands:
    - sudo apt-get update
    - sudo apt-get -y upgrade
-   - sudo apt-get install linux-image-extra-`uname -r`
+   - sudo apt-get install linux-image-extra- `uname -r`
    - sudo apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
    - echo "deb https://apt.dockerproject.org/repo ubuntu-trusty main" | sudo tee /etc/apt/sources.list.d/docker.list
    - sudo apt-get update
@@ -31,9 +31,13 @@ Installation
 
 2. Once Docker has been installed then we need to pull the Ubuntu14.04 image which we are going to use as our base image for this deployment. The command is:
    - sudo docker pull ubuntu:14.04
+   
+    N.B: also copy the "Dockerfile" into your local instance/host
 
 3. Now we containerize the application using Dockerfile, the execution command is as follows:
    - sudo docker build -t docker-python-api .
+   
+   
 
 4. Now to run the container execute following command
    - sudo docker run -d -p 8080:8080 docker_python_api:latest python run.py
