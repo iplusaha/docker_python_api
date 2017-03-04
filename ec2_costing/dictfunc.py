@@ -2,7 +2,6 @@ def func(data):
     """
    This function strip off the price on EC2 instance for each region and return the value into a Dictionary
     """
-
     last = dict()
     for item in data:
         d = dict()
