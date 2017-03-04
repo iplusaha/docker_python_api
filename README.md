@@ -35,7 +35,7 @@ Installation
     N.B: also copy the "Dockerfile" from this repository to your local instance/host
 
 3. Now we containerize the application using Dockerfile, the execution command is as follows:
-   - sudo docker build -t docker-python-api .
+   - sudo docker build -t docker_python_api .
    
    
 
