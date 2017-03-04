@@ -21,7 +21,7 @@ RUN apt-get install -y python-dev python-pip
 RUN git clone https://github.com/iplusaha/docker_python_api.git /docker_python_api
 
 # Get pip to download and install requirements:
-RUN pip install -r /docker_python_api/requirements.txt
+RUN pip install -qr /docker_python_api/requirements.txt
 
 # Expose ports
 EXPOSE 8080
