@@ -32,7 +32,7 @@ Installation
 2. Once Docker has been installed then we need to pull the Ubuntu14.04 image which we are going to use as our base image for this deployment. The command is:
    - sudo docker pull ubuntu:14.04
    
-    N.B: also copy the "Dockerfile" into your local instance/host
+    N.B: also copy the "Dockerfile" from this repository to your local instance/host
 
 3. Now we containerize the application using Dockerfile, the execution command is as follows:
    - sudo docker build -t docker-python-api .
