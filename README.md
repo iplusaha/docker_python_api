@@ -54,7 +54,7 @@ By default this API runs on port 8080
 
 GET /v1/pricing:
  To check the price of an instance type (for example: m3.xlarge) for eu-west-1 region, this following command can be executed:
-   - curl http://127.0.0.1:8080/v1/pricing?instance_type=m3.xlarge&region=eu-west-1
+   - curl http://127.0.0.1:8080/v1/pricing?instance_type=m3.xlarge\&region=eu-west-1
     
      0.495
 
